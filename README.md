@@ -1,4 +1,4 @@
-#Autocomplete Search using Angular Material accessing a remote APIs
+#Autocomplete Search using Angular Material accessing a remote API
 
 This is a very simple autocomplete search utilizing a remote API and Angular Material, specifically the
 md-autocomplete directive. The API call is done in filmFactory.js, and the functionality for rendering it on the DOM
