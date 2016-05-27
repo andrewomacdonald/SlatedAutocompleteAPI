@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node slated.js",
-    "postinstall": "npm i -g bower && bower i"
+    "postinstall": "npm install -g bower && bower install"
   },
   "repository": {
     "type": "git",
