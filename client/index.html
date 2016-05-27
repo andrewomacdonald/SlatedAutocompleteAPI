@@ -22,6 +22,9 @@
             md-min-length='3'
             placeholder='Enter a movie!'>
           <md-item-template>
+            <md-not-found>
+              NO MOVIES FOUND! PANIC!!!!!!!!!!!!
+            </md-not-found>
             <a ng-href = 'http://www.slated.com/films/{{item.id}}/team'>
             <span class = 'imageCode' ng-bind-html='item.image_code'></span>
             <span class ='title'>{{item.label}}</span>

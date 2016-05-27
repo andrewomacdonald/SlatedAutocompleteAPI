@@ -23,3 +23,7 @@ form {
 body {
   background-color: #FFE4C4;
 }
+
+.md-not-found {
+  text-align: center !important;
+}
