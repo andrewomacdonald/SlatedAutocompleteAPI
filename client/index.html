@@ -8,10 +8,10 @@
   </head>
   <body>
     <div class='header' ng-controller = 'headerController'>
-      <span style = 'display: inline-block; width: 400px;'>{{header}}</span>
+      <span style = 'display: inline-block; width: 400px;' ng-cloak>{{header}}</span>
     </div>
     <br>
-    <div ng-controller='movieSearchController as ctrl'>
+    <div ng-controller='movieSearchController as ctrl' ng-cloak>
         <form ng-submit='$event.preventDefault()' ng-model = 'movie'>
           <md-autocomplete
             md-selected-item='selectedItem'
