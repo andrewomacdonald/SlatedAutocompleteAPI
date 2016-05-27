@@ -20,6 +20,7 @@
   "homepage": "https://github.com/andrewomacdonald/SlatedAutoCompleteAPI#readme",
   "dependencies": {
     "bower": "^1.7.9",
+    "ejs": "^2.4.2",
     "express": "^4.13.4"
   }
 }
