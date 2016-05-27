@@ -1,0 +1,23 @@
+{
+  "name": "Slated1",
+  "authors": [
+    "andrewomacdonald <andrew.o.macdonald@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.0",
+    "angular-sanitize": "^1.5.5"
+  }
+}

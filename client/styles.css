@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+  padding-top: 20%;
+}
+form {
+  width: 300px;
+  padding-left: 40%;
+}
+.imageCode{
+  float: left !important;
+  width: 30% !important;
+}
+.title{
+  float: right !important;
+  width: 70% !important;
+}
+.md-autocomplete-suggestions li {
+  height: 55px !important;
+  vertical-align: center !important;
+  padding-top: 2.25%;
+}
+
+body {
+  background-color: #FFE4C4;
+}

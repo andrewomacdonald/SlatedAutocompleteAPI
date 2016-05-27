@@ -1,0 +1,25 @@
+{
+  "name": "slated-autocomplete",
+  "version": "1.0.0",
+  "description": "An angular based autosearch to a remote API using Angular Material.",
+  "main": "slated.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewomacdonald/SlatedAutoCompleteAPI.git"
+  },
+  "author": "Andy MacDonald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewomacdonald/SlatedAutoCompleteAPI/issues"
+  },
+  "homepage": "https://github.com/andrewomacdonald/SlatedAutoCompleteAPI#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
+  }
+}

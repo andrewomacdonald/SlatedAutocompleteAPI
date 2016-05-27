@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='slated'>
+  <head>
+    <link rel = 'stylesheet' href = '../bower_components/angular-material/angular-material.css'>
+    <link rel = 'stylesheet' href = 'styles.css'>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class='header' ng-controller = 'headerController'>
+      <span style = 'display: inline-block; width: 400px;'>{{header}}</span>
+    </div>
+    <br>
+    <div ng-controller='movieSearchController as ctrl'>
+        <form ng-submit='$event.preventDefault()' ng-model = 'movie'>
+          <md-autocomplete
+            md-selected-item='selectedItem'
+            md-search-text='searchText'
+            md-items='item in searchTextChange(searchText)'
+            md-item-text='searchText'
+            md-min-length='3'
+            placeholder='Enter a movie!'>
+          <md-item-template>
+            <a ng-href = 'http://www.slated.com/films/{{item.id}}/team'>
+            <span class = 'imageCode' ng-bind-html='item.image_code'></span>
+            <span class ='title'>{{item.label}}</span>
+            <span md-highlight-text='searchText' md-highlight-flags='^i'>{{item.display}}</span>
+          </md-item-template>
+        </md-autocomplete>
+      </form>
+  </div>
+
+    <script src = '../bower_components/angular/angular.min.js'></script>
+    <script src = '../bower_components/angular-sanitize/angular-sanitize.min.js'></script>
+    <script src = '../bower_components/angular-material/angular-material.min.js'></script>
+    <script src = '../bower_components/angular-animate/angular-animate.min.js'></script>
+    <script src = '../bower_components/angular-aria/angular-aria.min.js'></script>
+    <script src = '../bower_components/angular-messages/angular-messages.min.js'></script>
+    <script src = 'app.js'></script>
+    <script src = 'controller/filmController.js'></script>
+    <script src = 'controller/headerController.js'></script>
+    <script src = 'factory/filmFactory.js'></script>
+  </body>
+</html>
