@@ -3,8 +3,8 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.use('/', express.static(__dirname + '/client'));
-app.get('/', function(request, response){
-  response.render('index');
+app.post('/', function(request, response){
+  response.render(__dirname + 'client/index.html');
 })
 
 app.listen(port, function(){
