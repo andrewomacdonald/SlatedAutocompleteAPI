@@ -7,4 +7,4 @@ is done in filmController.js.
 The finished product can be seen here: http://slatedautocomplete.herokuapp.com/
 
 If you would like to run this locally, simply clone this repo to your desktop, open your terminal, navigate to the root directory,
-type "node slated.js", and navigate to "http://localhost:3000" on your browser of choice!
+type "node slated.js" and press enter, and navigate to "http://localhost:3000" on your browser of choice!
